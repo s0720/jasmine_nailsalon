@@ -8,6 +8,7 @@
 	    'Yu Gothic', /* Windows用 */
 	    sans-serif;
         margin:0;
+        color:#181818;
     }
 
     header {
@@ -114,7 +115,7 @@
     }
     
     main {
-        width:90%;
+        width:100%;
         margin:0 auto;
     }
 
@@ -126,3 +127,26 @@
         width:70%;
         margin:0 auto;
     }
+
+    .about {
+        background-color:#F0F8FF;
+        padding:20px;
+    }
+
+    .about-box{
+        position: relative;
+        width:72%;
+        height: 300px;
+        border: 1px solid black;
+        margin: 0 auto;
+      }
+      
+    .about-box img{
+        object-fit: contain;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+      }
+      
+      
+
