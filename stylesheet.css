@@ -36,12 +36,83 @@
         padding:0px 15px;
     }
 
+    .sp-header-menu {
+        display:none;
+        line-height:100px;
+        float:right;
+    }
+
     .btn {
         background-color:#F0F8FF;
         padding:15px;
         border-radius: 40px;
     }
 
+    .menu-btn > i {
+        display: inline-block;
+        padding: 12px;
+        cursor: pointer;
+        border-radius: 50%;
+    }
+    
+    .menu-btn > i:hover {
+        background-color: #f3f4f6;
+    }
+
+    #menu-checkbox {
+        display: none;
+    }
+
+    .nav-content {
+        background-color: white;
+        width: 100%;
+        max-width: 50%;
+        height: 100%;
+        position: fixed;
+        top: 0;
+        right: 0;
+        z-index: 50;
+        padding: 8px;
+        overflow: auto;
+        transform: translateX(100%); /* 画面外に配置 */
+        transition-duration: 300ms;
+        float:right;
+    }
+
+    .nav-menu ul {
+        list-style: none;
+        text-align: left;
+    }
+
+    .nav-menu li > a {
+        text-decoration: none;
+        color: #707070;
+        padding: 12px;
+        display: block;
+    }
+
+    .nav-menu li > a:hover {
+        background-color: #f3f4f6;
+    }
+    
+    #menu-checkbox:checked ~ .nav-content {
+        transform: translateX(0%);
+    }
+
+    #menu-checkbox:checked ~ .nav-close {
+        display: block;
+        opacity: 0.5;
+    }
+
+    .hamburger a {
+        display: block;
+        line-height: 50px;
+    }
+
+    .hamburger a::first-letter {
+        color:#009bbf
+    }
+    
     main {
         width:90%;
         margin:0 auto;
