@@ -73,5 +73,11 @@
         margin: 0 auto;
     }
 
+    .top {
+        width: 95%;
+        margin: 0 auto;
+        padding-top:20px;
+    }
+
     
 }
